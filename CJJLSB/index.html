@@ -191,14 +191,16 @@
 </head>
 
 <body>
+	
     <canvas id="sakura"></canvas>
+	
     <img id="Ico" src="Data/IMG/HMU-WH.png" alt="HMU-WH">
-    <p id="Title">QQ - WX <br> 『2283592023』</p>
+	
+    <p id="Title">【企鹅 · 微信】 <br> - - - - - - <br>『2283592023』</p>
 
     <form id="PetSearch" action="javascript:void(0);" method="POST">
         <label for="PetName"></label><input id="PetName" type="text" placeholder="输入精灵名称【确认后查询】" autocomplete="off">
     </form>
-
 
     <div id="Pet">
         <table id="PetSkill" align="center">
@@ -257,6 +259,7 @@
                         document.getElementById("TableTitle").innerText = "【" + PetName + "】的技能表:";
                         document.getElementById("Skills").innerHTML = document.getElementById("Skills").innerHTML + "<tr><td>" + petSkill.技能 + "</td><td>" + petSkill.等级 + "</td><td>" + petSkill.系别 + "</td><td>" + petSkill.类型 + "</td><td>" + petSkill.威力 + "</td><td>" + petSkill.PP值 + "</td><td>" + petSkill.命中率 + "</td><td>" + petSkill.优先度 + "</td><td>" + petSkill.信息介绍 + "</td></tr>"
                     }
+                    document.getElementById("PetName").blur();
                     document.getElementById("Ico").style.display = "none";
                     document.getElementById("Pet").style.display = "block";
                     document.getElementById("Title").style.display = "none";
@@ -1356,7 +1359,6 @@
             w['r' + r] = w['r' + r] || w['webkitR' + r] || w['mozR' + r] || w['msR' + r] || w['oR' + r] || function (c) { w.setTimeout(c, 1000 / 60); };
         })(window, 'equestAnimationFrame');
     </script>
-
 
 </body>
 
